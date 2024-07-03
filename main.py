@@ -9,4 +9,4 @@ def main(page: ft.Page):
 
 logging.basicConfig(level=logging.INFO)
 
-ft.app(target=main, view=None, port=int(os.getenv("PORT", 8502)))
+ft.app(target=main, view=ft.WEB_BROWSER, port=int(os.getenv("PORT", 8502)))
